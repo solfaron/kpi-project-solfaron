@@ -22,7 +22,7 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Publish Application
-      run: dotnet publish App/App.csproj --configuration Release --output ./publish_output -p:AssemblyName=Release
+      run: dotnet publish App/App.csproj --configuration Release --output ./publish_output
 
     - name: Zip the Output
       run: |
